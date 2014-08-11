@@ -7,10 +7,8 @@ function *squareGen(init) {
     }
 }
 
-var test = squareGen(2);
-
-for (let num of test) {
-    console.log(num);
+for (let num of squareGen(2)) {
+    console.log(num, "for of");
 }
 
 var test = squareGen(4);
@@ -19,3 +17,6 @@ console.log(test.next());
 console.log(test.next());
 console.log(test.next());
 console.log(test.next());
+
+console.log(squareGen(4).next());
+console.log(squareGen(4).next());
