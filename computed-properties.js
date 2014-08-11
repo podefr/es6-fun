@@ -10,5 +10,3 @@ var config = {
 };
 
 console.log(Object.keys(config));
-
-
