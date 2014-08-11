@@ -1,4 +1,4 @@
-// Use with traceur: traceur simple-generators.js --experimental
+// Use with traceur: traceur generators.js --experimental
 
 "use strict";
 
