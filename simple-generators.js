@@ -1,3 +1,5 @@
+// Use with traceur: traceur simple-generators.js --experimental
+
 "use strict";
 
 function *squareGen(init) {
