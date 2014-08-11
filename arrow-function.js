@@ -6,9 +6,9 @@ function Klass() {
 
     this.value = 2;
 
-    this.test = p => p * this.value;
+    this.test = (p, q) => p * q * this.value;
 }
 
 var klass = new Klass();
 
-console.log(klass.test(3));
+console.log(klass.test(3, 5));
