@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fun with Map, Set, WeakMap, WeakSet</title>
+        <script src="https://google.github.io/traceur-compiler/bin/traceur.js"></script>
+        <script src="https://google.github.io/traceur-compiler/src/bootstrap.js"></script>
+        <script type="module">
+
+            traceur.options.experimental = true;
+
+            var array = [0, 1, 2];
+            var mySet = new Set(array);
+
+            console.log(mySet.has(0));
+            console.log(mySet.has(3));
+
+            console.log(mySet.map);
+
+            // Love the spread operator!
+            console.log([...mySet].map(function (val) {
+                return val * 10;
+            }));
+        </script>
+    </head>
+    <body>
+        only works in Chrome 35+ and Opera 22+.
+
+    </body>
+</html>
