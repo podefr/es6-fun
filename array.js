@@ -10,3 +10,13 @@ console.log(Array.from({length:5}, (v,i) => i));
 console.log(Array.from({a:1, b:2}));
 
 console.log(Array.of(1, 2, 3));
+
+console.log([{ text: "I"}, { text: "&heart;"}, { text: "ES6"}].find(function (element, index, array) {
+    console.log("testing index", index, "in array", array);
+    return element.text == "ES6";
+}));
+
+console.log([{ text: "I"}, { text: "&heart;"}, { text: "ES6"}].findIndex(function (element, index, array) {
+    console.log("testing index", index, "in array", array);
+    return element.text == "ES6";
+}));
