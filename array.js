@@ -23,3 +23,21 @@ console.log([{ text: "I"}, { text: "&heart;"}, { text: "ES6"}].findIndex(functio
 
 console.log([0, 0, 0].fill(4, 1, 2));
 console.log([0, 0, 0].fill(4, 1, 3));
+
+var iterator = ["a", "b", "c"].keys();
+console.log(iterator.next());
+console.log(iterator.next());
+console.log(iterator.next());
+
+iterator = ["a", "b", "c"].values();
+
+console.log(iterator.next());
+console.log(iterator.next());
+console.log(iterator.next());
+
+iterator = ["a", "b", "c"].entries();
+
+console.log(iterator.next());
+console.log(iterator.next());
+console.log(iterator.next());
+
