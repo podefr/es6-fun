@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>fun with es6 promises</title>
+        <script>
+
+            var promise = new Promise(function (fulfill) {
+                setTimeout(fulfill.bind(null, "value"), 100);
+            });
+
+            promise.then(function (value) {
+               console.log(value);
+                return "transformed value";
+            }).then(function (value) {
+                console.log(value);
+            }).then(function () {
+                return new Promise(function (fulfill) {
+                    setTimeout(fulfill.bind(null, "new val"), 1000);
+                });
+            }).then(function (newValue) {
+                console.log(newValue);
+            });
+
+            var promise2 = new Promise(function (fulfill, reject) {
+                setTimeout(fulfill.reject(null, "reason"), 100);
+            });
+
+            promise2.then(function (value) {
+                console.log("no value");
+            }, function (reason) {
+                console.log("rejected because " + reason);
+                throw new Error("OMG OMG");
+            }).then(function (value) {
+                console.log("new value :", value);
+            }, function (reason) {
+                console.log("also rejected because", reason);
+            });
+
+
+        </script>
+    </head>
+    <body>
+
+
+    </body>
+</html>
