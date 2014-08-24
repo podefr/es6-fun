@@ -8,3 +8,5 @@
 console.log(Array.from({length:5}, (v,i) => i));
 
 console.log(Array.from({a:1, b:2}));
+
+console.log(Array.of(1, 2, 3));
