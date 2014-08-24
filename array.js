@@ -20,3 +20,6 @@ console.log([{ text: "I"}, { text: "&heart;"}, { text: "ES6"}].findIndex(functio
     console.log("testing index", index, "in array", array);
     return element.text == "ES6";
 }));
+
+console.log([0, 0, 0].fill(4, 1, 2));
+console.log([0, 0, 0].fill(4, 1, 3));
