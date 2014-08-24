@@ -12,4 +12,4 @@ function destructureMe({a, b}, [c, d, e = '!!!!!']) {
     console.log(a, b, c, d, e);
 }
 
-destructureMe({a: "fun with", b: "destructuring"}, ["it's", "unbelivable"]);
+destructureMe({a: "fun with", b: "destructuring"}, ["it's", "unbelievable"]);
